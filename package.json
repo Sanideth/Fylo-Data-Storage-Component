@@ -1,0 +1,25 @@
+{
+  "name": "fylo-data-storage-component",
+  "version": "1.0.0",
+  "description": "Fuly Data Storage Component from frontendmentor.io challenges",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanideth/Fylo-Data-Storage-Component.git"
+  },
+  "author": "Sandro Bochorishvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanideth/Fylo-Data-Storage-Component/issues"
+  },
+  "homepage": "https://github.com/Sanideth/Fylo-Data-Storage-Component#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.0",
+    "postcss-cli": "^8.3.0"
+  }
+}
