@@ -31,7 +31,7 @@ body {
     body {
       background-image: url(../img/bg-mobile.png);
       background-size: cover;
-      background-position: auto; } }
+      background-position: center; } }
 
 .main {
   display: flex; }
