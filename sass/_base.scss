@@ -1,3 +1,16 @@
+:root {
+  --color-primary-pale-blue: hsl(243, 100%, 93%);
+  --color-primary-grayish-blue: hsl(229, 7%, 55%);
+  --color-primary-dark-blue: hsl(228, 56%, 26%);
+  --color-primary-very-dark-blue: hsl(229, 57%, 11%);
+
+  --linear-gradient: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+}
+
+$bp-large: 52em; //bp at 832px
+$bp-medium: 37.5em; //bp at 600px
+$bp-small: 24em; //bp at 384px
+
 *,
 *::before,
 *::after {
@@ -8,4 +21,24 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% calc(50% + 1.5rem);
+  background-color: var(--color-primary-very-dark-blue);
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url(../img/bg-mobile.png);
+    background-size: cover;
+    background-position: auto;
+  }
 }
