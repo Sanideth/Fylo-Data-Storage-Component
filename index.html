@@ -10,6 +10,8 @@
       sizes="32x32"
       href="./img/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Frontend Mentor | Fylo data storage component</title>
@@ -18,9 +20,10 @@
   </head>
   <body>
     <div class="container">
-      <main class="main">
+      <main class="main u-mb-b">
         <div class="main__images-container">
-          <img src="./img/logo.svg" alt="Fylo Logo" class="main__logo">
+          <img src="./img/logo.svg" alt="Fylo Logo" class="main__logo u-mb-m">
+          <div class="main__icons-container">
           <div class="main__icon-container">
             <img src="./img/icon-document.svg" alt="Document Icon" class="main__icon">
           </div>
@@ -31,14 +34,18 @@
             <img src="./img/icon-upload.svg" alt="Upload Icon" class="main__icon">
           </div>
         </div>
+        </div>
         <div class="main__fylo-details">
-          <p class="main__text">You’ve used <span class="main__span">815 GB</span> of your storage</p>
+          <p class="main__text u-mb-sm">You’ve used <span class="main__span-primary">815 GB</span> of your storage</p>
           <div class="main__content-container">
-            <div class="main__data-contaner">
-              <div class="main__info-buble">
-                <p class="main__info-text">185 GB Left</p>
+            <div class="main__data-container">
+              <div class="main__data">
+                
               </div>
-              <div class="main__data"></div>
+              <div class="main__info-bubble">
+                <p class="main__info-text">185 <span class="main__span-secondary">GB Left</span></p>
+              </div>
+              
             </div>
             <div class="main__data-text-container">
               <p class="main__storage-starting-point">0 GB</p>
@@ -48,7 +55,7 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="attribution">
+        <div class="footer__attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
